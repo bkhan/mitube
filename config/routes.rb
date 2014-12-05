@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'videos/index'
-
-  get 'videos/new'
-
-  get 'videos/create'
-
-  get 'videos/show'
-
-  root 'videos#index'
+root 'videos#index'
 
 resources :videos, only: [:index, :new, :create, :show]
 
